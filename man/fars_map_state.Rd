@@ -16,9 +16,9 @@ a graph with each selected observation ploted on the map
 }
 \description{
 take state.num and year as input, extract longitude and latitude accordingly,
-then plot the state on the map. Error wiil occur if state number is invalid.
+then plot the state on the map. Error will occur if state number is invalid.
 }
 \examples{
-fars_map_state(10002, 2015)
+fars_map_state(1, 2015)
 }
 

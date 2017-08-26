@@ -1,0 +1,35 @@
+---
+title: "Fas tutorial"
+author: "Emrick"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This is detailed tutorial demo of how the functions in the package are used in real applications.
+
+This fas package provide basic functionalities to read, extract and plot data.
+In this vignette, we use a actual example to demonstrate the application.
+
+
+##example
+Using fas package, we can summarize the traffic amount for each month of given years. Following is a example of doing so.
+
+```{r}
+#summarize data for the 2013,2014
+library(Fas)
+years <- list(2013,2014)
+fars_summarize_years(years)
+```
+
+In next example, we will extract traffic data in 2014 for state number 24, and plot those data in
+in map.
+```{r, message=F}
+library(maps)
+fars_map_state(24, 2014)
+```
+
+
