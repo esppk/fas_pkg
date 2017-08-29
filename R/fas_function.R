@@ -48,6 +48,7 @@ make_filename <- function(year) {
 #'
 #' @param years a list contain years use to extract data, years can either denote as
 #' integers or strings.
+#' @importFrom dplyr "%>%"
 #' @import dplyr
 #' @return a list contain only the month and year provided, each element contain
 #' data for the same year. If the no data match the year provided NULL and a warning
@@ -78,6 +79,7 @@ fars_read_years <- function(years) {
 #' @param years a list of years used for \code{fars_read_years} function.
 #' @return a table in tibble format, contain couts for each month-year combination.
 #' @import dplyr tidyr
+#' @importFrom dplyr "%>%"
 #' @examples
 #' years <- list("2014", 2015)
 #' far_summrize_years(years)
