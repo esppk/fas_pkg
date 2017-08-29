@@ -21,6 +21,7 @@ Using fas package, we can summarize the traffic amount for each month of given y
 ```{r}
 #summarize data for the 2013,2014
 library(Fas)
+
 years <- list(2013,2014)
 fars_summarize_years(years)
 ```

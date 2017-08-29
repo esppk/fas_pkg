@@ -5,7 +5,7 @@
 #'
 #' @param filename path of the file to be read
 #' @return tibble contain data in the file
-#' @import dplyr readr
+#'
 #' @examples
 #'  fars_read("data.csv")
 #' @export
@@ -48,7 +48,8 @@ make_filename <- function(year) {
 #'
 #' @param years a list contain years use to extract data, years can either denote as
 #' integers or strings.
-#' @import dplyr
+#' @importFrom magrittr "%>%"
+#'
 #' @return a list contain only the month and year provided, each element contain
 #' data for the same year. If the no data match the year provided NULL and a warning
 #' message will return.
@@ -77,7 +78,8 @@ fars_read_years <- function(years) {
 #'
 #' @param years a list of years used for \code{fars_read_years} function.
 #' @return a table in tibble format, contain couts for each month-year combination.
-#' @import dplyr tidyr
+#'
+#' @importFrom magrittr "%>%"
 #' @examples
 #' years <- list("2014", 2015)
 #' far_summrize_years(years)
@@ -98,7 +100,7 @@ fars_summarize_years <- function(years) {
 #'
 #' @param state.num state number according to which state is selected
 #' @param year The year to be selected.  This can be either string or numberic
-#' @import dplyr tidyr
+#'
 #' @return a graph with each selected observation ploted on the map
 #' @examples
 #' fars_map_state(1, 2015)
