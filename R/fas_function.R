@@ -46,18 +46,13 @@ make_filename <- function(year) {
 #' and year columns will be kept. Final output will be list format each element
 #' contain data for one year.
 #'
-#' @param years a list contain years use to extract data, years can either denote as
-#' integers or strings.
-<<<<<<< HEAD
+#' @param years a list contain years use to extract data, years can either denote as integers or strings.
+#'
 #' @importFrom magrittr "%>%"
 #'
-=======
-#' @importFrom dplyr "%>%"
-#' @import dplyr
->>>>>>> 38cbfe564d809e6468a1578ab2125ce4f27c4e9b
-#' @return a list contain only the month and year provided, each element contain
-#' data for the same year. If the no data match the year provided NULL and a warning
-#' message will return.
+#' @return a list contain only the month and year provided, each element contain data for the same year. If the no data match the year provided NULL and a warning message will return.
+#'
+#'
 #' @examples
 #' years <- list(2014,"2015")
 #' fars_read_years(years)
@@ -83,13 +78,8 @@ fars_read_years <- function(years) {
 #'
 #' @param years a list of years used for \code{fars_read_years} function.
 #' @return a table in tibble format, contain couts for each month-year combination.
-<<<<<<< HEAD
 #'
 #' @importFrom magrittr "%>%"
-=======
-#' @import dplyr tidyr
-#' @importFrom dplyr "%>%"
->>>>>>> 38cbfe564d809e6468a1578ab2125ce4f27c4e9b
 #' @examples
 #' years <- list("2014", 2015)
 #' far_summrize_years(years)
