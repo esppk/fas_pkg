@@ -5,6 +5,4 @@ export(fars_read)
 export(fars_read_years)
 export(fars_summarize_years)
 export(make_filename)
-import(dplyr)
-import(readr)
-import(tidyr)
+
