@@ -7,7 +7,8 @@
 #' @return tibble contain data in the file
 #'
 #' @examples
-#'  fars_read("data.csv")
+#' setwd(paste0(.libPaths()[1],"/Fas"))
+#' fars_read("accident_2013.csv.bz2")
 #' @export
 fars_read <- function(filename) {
   if(!file.exists(filename))
@@ -54,7 +55,8 @@ make_filename <- function(year) {
 #'
 #'
 #' @examples
-#' years <- list(2014,"2015")
+#' setwd(paste0(.libPaths()[1],"/Fas"))
+#' years <- list(2014,2013)
 #' fars_read_years(years)
 #' @export
 
@@ -81,8 +83,9 @@ fars_read_years <- function(years) {
 #'
 #' @importFrom magrittr "%>%"
 #' @examples
-#' years <- list("2014", 2015)
-#' far_summrize_years(years)
+#' setwd(paste0(.libPaths()[1],"/Fas"))
+#' years <- list(2014, 2013)
+#' fars_summarize_years(years)
 #' @export
 
 fars_summarize_years <- function(years) {
@@ -103,7 +106,9 @@ fars_summarize_years <- function(years) {
 #'
 #' @return a graph with each selected observation ploted on the map
 #' @examples
-#' fars_map_state(1, 2015)
+#' library(maps)
+#' setwd(paste0(.libPaths()[1],"/Fas"))
+#' fars_map_state(1, 2014)
 #' @export
 
 fars_map_state <- function(state.num, year) {

@@ -17,6 +17,7 @@ Check whether file exists first, if it does, read the
 the file then convert it to tibble format. Otherwise error message will return.
 }
 \examples{
- fars_read("data.csv")
+setwd(paste0(.libPaths()[1],"/Fas"))
+fars_read("accident_2013.csv.bz2")
 }
 

@@ -7,13 +7,10 @@
 fars_read_years(years)
 }
 \arguments{
-\item{years}{a list contain years use to extract data, years can either denote as
-integers or strings.}
+\item{years}{a list contain years use to extract data, years can either denote as integers or strings.}
 }
 \value{
-a list contain only the month and year provided, each element contain
-data for the same year. If the no data match the year provided NULL and a warning
-message will return.
+a list contain only the month and year provided, each element contain data for the same year. If the no data match the year provided NULL and a warning message will return.
 }
 \description{
 The function take a list of years as input, use make_filename functon, and
@@ -22,7 +19,8 @@ and year columns will be kept. Final output will be list format each element
 contain data for one year.
 }
 \examples{
-years <- list(2014,"2015")
+setwd(paste0(.libPaths()[1],"/Fas"))
+years <- list(2014,2013)
 fars_read_years(years)
 }
 

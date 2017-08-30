@@ -19,6 +19,8 @@ take state.num and year as input, extract longitude and latitude accordingly,
 then plot the state on the map. Error will occur if state number is invalid.
 }
 \examples{
-fars_map_state(1, 2015)
+library(maps)
+setwd(paste0(.libPaths()[1],"/Fas"))
+fars_map_state(1, 2014)
 }
 

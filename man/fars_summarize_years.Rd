@@ -16,7 +16,8 @@ a table in tibble format, contain couts for each month-year combination.
 summarize number count for each month and year combination
 }
 \examples{
-years <- list("2014", 2015)
-far_summrize_years(years)
+setwd(paste0(.libPaths()[1],"/Fas"))
+years <- list(2014, 2013)
+fars_summarize_years(years)
 }
 
